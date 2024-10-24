@@ -16,6 +16,8 @@
 	<RepositoryType>git</RepositoryType>
 	<PackageTags>ics; outlook; google calendar</PackageTags>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<RepositoryUrl>https://github.com/DavidThielen/TradeWindsInvitationBuilder</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/DavidThielen/TradeWindsInvitationBuilder</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
