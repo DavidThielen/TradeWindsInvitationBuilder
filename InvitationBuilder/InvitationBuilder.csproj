@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<Version>1.0.0.1</Version>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>Generate Calendar Invitations</Title>
+	<Authors>DavidThielen</Authors>
+	<Company>Trade Winds Studios</Company>
+	<Description>Provides a single object that will create invitations for .ICS, Outlook, Google, etc.</Description>
+	<Copyright>MIT</Copyright>
+	<PackageIcon>calendar.png</PackageIcon>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<RepositoryType>git</RepositoryType>
+	<PackageTags>ics; outlook; google calendar</PackageTags>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\calendar.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ical.Net" Version="4.3.1" />
+    <PackageReference Include="MsgKit" Version="2.8.3" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <PackageReference Include="TimeZoneConverter" Version="6.1.0" />
+    <PackageReference Include="TradeWindsCommon" Version="1.0.0.3" />
+    <PackageReference Include="TradeWindsDateTime" Version="1.0.0.2" />
+  </ItemGroup>
+
+</Project>
